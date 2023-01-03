@@ -35,6 +35,14 @@
   background-color: var(--light-blue);
 }
 
+.onebutton {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 25px;
+  font-size: 2000%;
+}
+
 .heading-text {
   margin-bottom: 4rem;
   font-size: 4rem;
