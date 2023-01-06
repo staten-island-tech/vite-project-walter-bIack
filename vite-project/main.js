@@ -1,4 +1,4 @@
-import { list } from "./list";
+import { menu } from "./list";
 const d = new Date();
 var day = "";
 
@@ -27,11 +27,11 @@ switch (d.getDay()) {
 }
 
 const menuDiv = document.querySelector("#menu");
-display(list);
+display(menu);
 
 document.querySelector("#all").addEventListener("click", function () {
   menuDiv.innerHTML = "";
-  display(list);
+  display(menu);
 });
 document.querySelector("#beef").addEventListener("click", function () {
   menuDiv.innerHTML = "";
