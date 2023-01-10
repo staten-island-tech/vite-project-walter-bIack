@@ -9,13 +9,13 @@ body,
 }
 
 :root {
- --light-background: rgb(255, 254, 249);
- --light-header: rgb(255, 239, 215);
- --light-itembg: rgb(227, 240, 255);
+ --light-background: rgb(200, 255, 198);
+ --light-header: rgb(253, 197, 253);
+ --light-itembg: rgb(206, 229, 255);
 
- --dark-background: rgb(54, 54, 54);
- --dark-itembg: rgb(150, 150, 150);
- --dark-header: rgb(0, 137, 123);
+ --dark-background: rgb(71, 60, 60);
+ --dark-itembg: rgb(167, 167, 167);
+ --dark-header: rgb(255, 253, 253);
 
  --background: rgb(255, 254, 249);
  --header: rgb(255, 239, 215);
@@ -61,6 +61,7 @@ h1 {
 
 .menu-object {
  width: 26%;
+ height: 500px;
  text-align: center;
  background-color: var(--itembg);
  border: 3px solid black;
@@ -71,6 +72,7 @@ h1 {
 .menu-image {
  margin: 10px;
  width: 90%;
+ height: 60%;
 }
 
 h2 {

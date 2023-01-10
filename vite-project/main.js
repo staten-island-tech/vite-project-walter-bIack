@@ -1,31 +1,4 @@
 import { menu } from "./list";
-const d = new Date();
-var day = "";
-
-switch (d.getDay()) {
-  case 0:
-    day = "sunday";
-    break;
-  case 1:
-    day = "moday";
-    break;
-  case 2:
-    day = "tuesday";
-    break;
-  case 3:
-    day = "wednesday";
-    break;
-  case 4:
-    day = "thursday";
-    break;
-  case 5:
-    day = "friday";
-    break;
-  case 6:
-    day = "saturday";
-    break;
-}
-
 const menuDiv = document.querySelector("#menu");
 display(menu);
 
@@ -33,19 +6,19 @@ document.querySelector("#all").addEventListener("click", function () {
   menuDiv.innerHTML = "";
   display(menu);
 });
-document.querySelector("#beef").addEventListener("click", function () {
+document.querySelector("#Fatherless").addEventListener("click", function () {
   menuDiv.innerHTML = "";
-  const filtered = menu.filter((item) => item.Skill === "beef");
+  const filtered = menu.filter((item) => item.Skill === "Fatherless");
   display(filtered);
 });
-document.querySelector("#chicken").addEventListener("click", function () {
+document.querySelector("#Mid").addEventListener("click", function () {
   menuDiv.innerHTML = "";
-  const filtered = menu.filter((item) => item.Skill === "chicken");
+  const filtered = menu.filter((item) => item.Skill === "Mid");
   display(filtered);
 });
-document.querySelector("#vegetarian").addEventListener("click", function () {
+document.querySelector("#Skill").addEventListener("click", function () {
   menuDiv.innerHTML = "";
-  const filtered = menu.filter((item) => item.Skill === "none");
+  const filtered = menu.filter((item) => item.Skill === "Skill");
   display(filtered);
 });
 
@@ -59,16 +32,14 @@ document.querySelector("#theme-button").addEventListener("click", function () {
 
 function display(array) {
   array.forEach((item) => {
-    if (item.sales.includes(day)) item.elixer = item.elixer / 2;
     menuDiv.insertAdjacentHTML(
       "beforeend",
       `<div class="menu-object">
                 <h2>${item.name}</h2>
                 <img class="menu-image" src="${item.image}">
-                <p class="menu-object-price">${item.elixer}</p>
+                <p class="menu-object-price">${item.elixer} Elixir</p>
                 <p class="menu-object-text">${item.description}</p>
             </div>`
     );
-    if (item.sales.includes(day)) item.elixer = item.elixer * 2;
   });
 }

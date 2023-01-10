@@ -86,7 +86,7 @@ export const menu = [
   {
     name: "Royal Giant",
     elixer: 6,
-    description: "His rock solid balls do a lot of damamge",
+    description: "His rock solid balls do a lot of damage",
     image:
       "https://th.bing.com/th/id/OIP.-PoJ25te0VTju_ZB2dWutwHaEK?w=294&h=180&c=7&r=0&o=5&pid=1.7",
     Skill: "Mid",
